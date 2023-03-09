@@ -8,16 +8,18 @@ pipeline
         {
             steps 
             {
-                echo 'running python script'
-                sh 'Loader.py'
+                echo 'Build App'
+                sh ' python -version'
             }
         }
 
         stage('Test') 
         {
             steps 
-            {
-                echo 'Test App'
+            {   
+                echo 'running python script'
+                sh 'Loader.py'
+                
             }
         }
 
