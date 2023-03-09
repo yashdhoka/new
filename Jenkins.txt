@@ -17,7 +17,7 @@ pipeline
             steps 
             {   
                 echo 'running python script'
-                ~/.bashrc 'python trial.py'
+                bashrc 'python trial.py'
             }
         }
 
